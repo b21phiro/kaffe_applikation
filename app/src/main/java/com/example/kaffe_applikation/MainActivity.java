@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Gömmer actionbar
+        getSupportActionBar().hide();
+
         JsonTask jsonTask = new JsonTask(this);
         jsonTask.execute(this.JSON_FILE);
 
