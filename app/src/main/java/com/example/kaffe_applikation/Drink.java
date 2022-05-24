@@ -1,10 +1,11 @@
 package com.example.kaffe_applikation;
 
 public class Drink {
-    private String id, name, type, company, location, category;
+    private String id, name, type, company, location, category, auxdata;
     private Integer size, cost;
 
-    public Drink(String id, String name, String type, String company, String location, String category, Integer size, Integer cost) {
+
+    public Drink(String id, String name, String type, String company, String location, String auxdata, String category, Integer size, Integer cost) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -13,6 +14,7 @@ public class Drink {
         this.category = category;
         this.size = size;
         this.cost = cost;
+        this.auxdata = auxdata;
     }
 
     public String getId() {
@@ -77,5 +79,13 @@ public class Drink {
 
     public void setCost(Integer cost) {
         this.cost = cost;
+    }
+
+    public String getAuxdata() {
+        return auxdata;
+    }
+
+    public void setAuxdata(String auxdata) {
+        this.auxdata = auxdata;
     }
 }
