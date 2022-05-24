@@ -28,6 +28,7 @@ android {
 }
 
 dependencies {
+    def nav_version = "2.4.2"
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
@@ -38,4 +39,7 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.7'
     implementation 'com.squareup.picasso:picasso:2.8'
+
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
 }
