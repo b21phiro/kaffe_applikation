@@ -62,10 +62,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
 
     }
 
-    public void goToAbout() {
-
-    }
-
     @Override
     public void onPostExecute(String json) {
         Gson gson = new Gson();
